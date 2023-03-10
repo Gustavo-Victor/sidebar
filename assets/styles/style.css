@@ -1,3 +1,4 @@
+/*css variables*/
 :root {
     --body-bg-color: #dce4e3;
     --green: #18c29c;
@@ -6,21 +7,13 @@
     --text-color: #084236;
 }
 
+/*reset*/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-
-body {
-    background-color: var(--body-bg-color);
-    color: var(--text-color); 
-    width: 100vw; 
-    height: auto; 
-    font-family: 'Poppins', sans-serif;
-    position: relative;
-}
 
 button {
     border: none;
@@ -44,11 +37,22 @@ li {
     list-style: none;
 }
 
+/*body*/
+body {
+    background-color: var(--body-bg-color);
+    color: var(--text-color); 
+    width: 100vw; 
+    height: auto; 
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+}
+
+
 /*navbar*/
 .navbar {
     z-index: 2;
     width: 80px;
-    max-width: 8%;
+    max-width: 4rem;
     background-color: var(--green);
     height: 100vh; 
     position: fixed;
@@ -113,7 +117,6 @@ li {
     align-items: center;
     gap: 1.5rem;
     width: 100%;
-    /* padding-left: 1rem; */
 }
 
 .navbar .menu-list .menu-item {    
@@ -145,7 +148,6 @@ li {
     opacity: .7;
 }
 
-
 /*user information div*/
 .navbar .user-container {
     background-color: var(--light-green); 
@@ -162,7 +164,6 @@ li {
 }
 
 .navbar .user-container .user-info .user-img {
-    width: 25%;
     max-width: 50px;
     height: auto; 
     max-height: 50px;
@@ -236,12 +237,11 @@ li {
 }
 
 
-
 /*dashboard*/
 .dashboard { 
     width: auto;
     height: auto; 
-    margin-left: 9%;
+    margin-left: 5rem;
 }
 
 .navbar.active + .dashboard {
@@ -250,31 +250,18 @@ li {
 
 
 
-
-@media only screen and (max-width: 850px) {
+/*media queries*/
+@media only screen and (max-width: 870px) {
     .navbar.active {
         max-width: 27%; 
-    }
-    .navbar + .dashboard {
-        margin-left: 10%;
     }
 
     .navbar.active + .dashboard { 
         margin-left: 30%;
     }
-
-    .navbar.active .user-container .user-info {
-        align-items: center;
-    }
-
-    .navbar.active .user-container .user-info .user-img { 
-        width: auto; 
-        max-height: 100%;
-    }
 } 
 
-
-@media only screen and (max-width: 650px) { 
+@media only screen and (max-width: 670px) { 
     .navbar.active { 
         min-width: 100%;        
     }
@@ -296,38 +283,7 @@ li {
     }
 }
 
-@media only screen and (max-width: 500px) {  
-    .navbar .navbar-container {
-        padding: 10px;  
-    }
-
-    .navbar .navbar-search {
-        padding: 10px;    
-    }
-
-    .navbar .user-container {
-        padding: 5px 10px;  
-    }   
-}
-
 @media only screen and (max-width: 350px) { 
-    .navbar .navbar-container .navbar-logo-div .navbar-toggler .navbar-toggler-img {
-        width: 15px;
-    }
-
-    .navbar .navbar-search {
-        background-size: 15px;
-    }
-
-    .navbar .menu-list .menu-item .menu-link  .menu-icon{ 
-        width: 15px;
-        height: auto; 
-    }
-
-    .navbar .user-container .logout-btn .logout-img {
-        width: 15px;
-    }
-
     .dashboard .title {
         font-size: 1.7rem;
     }
