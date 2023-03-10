@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Menu Lateral</title>
+
+        <!--fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+
+        <!--css-->
+        <link rel="stylesheet" href="./assets/styles/style.css">
+
+        <!--js-->
+        <script src="./assets/scripts/index.js" defer></script>
+    </head>
+    <body>
+        
+        <!--aside bar-->
+        <nav class="navbar">            
+            <div class="navbar-container">
+                <!--logo div-->
+                <div class="navbar-logo-div">
+                    <a class="navbar-logo-link" href="#"><img class="navbar-logo-img" src="./assets/img/logo.svg" alt="logo"></a>
+                    <button class="navbar-toggler"><img class="navbar-toggler-img" src="./assets/img/menu.svg" alt="menu-toggler"></button>
+                </div>
+
+                <!--search input-->
+                <input type="search" name="search" placeholder="Buscar"
+                 class="navbar-search" id="search">
+
+                <!--item list-->
+                <ul class="menu-list">   
+                    <li class="menu-item">                        
+                        <a class="menu-link" href="#"> 
+                            <img src="./assets/img/grid.svg" title="Dashboard" class="menu-icon" alt="grid">
+                            <span class="menu-link-text">Dashboard</span>                            
+                        </a>
+                    </li>
+                    <li class="menu-item">                        
+                        <a class="menu-link" href="#">
+                            <img src="./assets/img/pet.svg" title="Pets" class="menu-icon" alt="pet">
+                            <span class="menu-link-text">Pets</span>    
+                        </a>
+                    </li>
+                    <li class="menu-item">                        
+                        <a class="menu-link" class="menu-link" href="#">
+                            <img src="./assets/img/user.svg" title="Clientes" class="menu-icon" alt="user">
+                            <span class="menu-link-text">Clientes</span>    
+                        </a>
+                    </li>
+                    <li class="menu-item">                            
+                        <a class="menu-link" href="#">
+                            <img src="./assets/img/vet.svg" title="Vets" class="menu-icon" alt="vet">
+                            <span class="menu-link-text">Vets</span>    
+                        </a>
+                    </li>
+                    <li class="menu-item">                        
+                        <a class="menu-link" href="#">
+                            <img src="./assets/img/settings.svg" title="Ajustes" class="menu-icon" alt="settings">
+                            <span class="menu-link-text">Ajustes</span>    
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!--div user info-->
+            <div class="user-container">
+                <div class="user-info">
+                    <img class="user-img" src="./assets/img/photo.jpg" alt="photo">
+                    <div class="user-details">
+                        <h3 class="user-name">Eleanor Pena</h3>
+                        <p class="user-occupation">Veterinária</p>
+                    </div>
+                </div>
+                <a class="logout-btn" href="#">
+                    <img class="logout-img" src="./assets/img/log-out.svg" alt="logout">
+                </a>
+            </div>
+        </nav>
+
+        <!--dashboard-->
+        <main class="dashboard">
+            <h1 class="title">Dashboard</h1>
+        </main>
+    </body>
+</html>
